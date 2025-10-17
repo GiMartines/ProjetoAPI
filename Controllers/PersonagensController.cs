@@ -55,6 +55,7 @@ namespace ProjetoUm.Controllers
         public async Task<IActionResult> UpdatePersonagem(int id, [FromBody] Personagem personagemAtualizado)
         {
             var personagemExistente = await _service.UpdatePersonagem(id, personagemAtualizado);
+            Console.WriteLine("Vamos fazer o teste de conflito aqui, modifique esta mensagem!");
             if (personagemExistente == null)
             {
                 return NotFound("Personagem não encontrado!");
