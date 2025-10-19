@@ -55,7 +55,7 @@ namespace ProjetoUm.Controllers
         public async Task<IActionResult> UpdatePersonagem(int id, [FromBody] Personagem personagemAtualizado)
         {
             var personagemExistente = await _service.UpdatePersonagem(id, personagemAtualizado);
-            Console.WriteLine("Vamos fazer o teste de conflito aqui, modifique esta mensagem!");
+            Console.WriteLine("Teste de conflito na mesma linha: Giovana!");
             if (personagemExistente == null)
             {
                 return NotFound("Personagem não encontrado!");
@@ -71,6 +71,14 @@ namespace ProjetoUm.Controllers
                 return NotFound("Personagem não encontrado!");
             }
             return Ok("Personagem deletado com sucesso!");
+        }
+
+        [HttpGet("ordenados")]
+        public async Task<ActionResult<IEnumerable<Personagem>>> GetPersonagensOrdenados()
+        {
+            var personagensOrdenados = await _service.GetPersonagensOrdenados();
+
+            return Ok(personagensOrdenados);
         }
     }
 }

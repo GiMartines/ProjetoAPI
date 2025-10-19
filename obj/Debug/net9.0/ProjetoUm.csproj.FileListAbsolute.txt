@@ -43,3 +43,4 @@ C:\Users\gimar\ProjetoUm\bin\Debug\net9.0\Mono.TextTemplating.dll
 C:\Users\gimar\ProjetoUm\bin\Debug\net9.0\MySqlConnector.dll
 C:\Users\gimar\ProjetoUm\bin\Debug\net9.0\Pomelo.EntityFrameworkCore.MySql.dll
 C:\Users\gimar\ProjetoUm\bin\Debug\net9.0\System.CodeDom.dll
+C:\Users\gimar\ProjetoUm\obj\Debug\net9.0\ProjetoUm.sourcelink.json

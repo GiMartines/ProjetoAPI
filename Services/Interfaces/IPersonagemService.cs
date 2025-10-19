@@ -13,5 +13,6 @@ namespace ProjetoUm.Services.Interfaces
         Task<Personagem> GetPersonagem(int id);
         Task<Personagem> UpdatePersonagem(int id, Personagem personagemAtualizado);
         Task<bool> DeletePersonagem(int id);
+        Task<IEnumerable<Personagem>> GetPersonagensOrdenados();
     }
 }
