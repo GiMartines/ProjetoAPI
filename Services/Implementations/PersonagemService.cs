@@ -23,6 +23,14 @@ namespace ProjetoUm.Services.Implementations
             return await _context.DBZ.ToListAsync();
         }
 
+        public async Task<IEnumerable<Personagem>> GetPorTipo(string tipo)
+        {
+            return await _context.DBZ
+                .Where(p => p.Tipo.ToLower() == tipo.ToLower())
+                .ToListAsync();
+        }
+
+
         public async Task<Personagem> GetPersonagem(int id)
         {
             return await _context.DBZ.FindAsync(id);

@@ -34,6 +34,7 @@ namespace ProjetoUm.Controllers
 
             return Created("Personagem criado com sucesso!", personagem);
         }
+
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Personagem>>> GetPersonagens()
         {
@@ -51,17 +52,37 @@ namespace ProjetoUm.Controllers
             }
             return Ok(personagem);
         }
+
+        [HttpGet("tipo/{tipo}")]
+        public async Task<ActionResult<IEnumerable<Personagem>>> GetPorTipo(string tipo)
+        {
+            var personagens = await _service.GetPorTipo(tipo);
+
+            if (personagens == null || !personagens.Any())
+            {
+                return NotFound("Nenhum personagem encontrado para esse tipo!");
+            }
+
+            return Ok(personagens);
+        }
+
+
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdatePersonagem(int id, [FromBody] Personagem personagemAtualizado)
         {
             var personagemExistente = await _service.UpdatePersonagem(id, personagemAtualizado);
+<<<<<<< HEAD
+            Console.WriteLine("mensagem para dar erro");
+=======
             Console.WriteLine("Teste de conflito na mesma linha: Giovana!");
+>>>>>>> origin/develop
             if (personagemExistente == null)
             {
                 return NotFound("Personagem não encontrado!");
             }
             return Ok(personagemExistente);
         }
+        
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeletePersonagem(int id)
         {
@@ -73,6 +94,9 @@ namespace ProjetoUm.Controllers
             return Ok("Personagem deletado com sucesso!");
         }
 
+<<<<<<< HEAD
+        
+=======
         [HttpGet("ordenados")]
         public async Task<ActionResult<IEnumerable<Personagem>>> GetPersonagensOrdenados()
         {
@@ -80,5 +104,6 @@ namespace ProjetoUm.Controllers
 
             return Ok(personagensOrdenados);
         }
+>>>>>>> origin/develop
     }
 }

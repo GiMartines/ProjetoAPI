@@ -1484,23 +1484,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gimar\\.nuget\\packages\\": {},
+    "C:\\Users\\Usuario\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gimar\\ProjetoUm\\ProjetoUm.csproj",
+      "projectUniqueName": "D:\\Usuario(nao apagar)\\Desktop\\ProjetoAPI\\ProjetoUm.csproj",
       "projectName": "ProjetoUm",
-      "projectPath": "C:\\Users\\gimar\\ProjetoUm\\ProjetoUm.csproj",
-      "packagesPath": "C:\\Users\\gimar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gimar\\ProjetoUm\\obj\\",
+      "projectPath": "D:\\Usuario(nao apagar)\\Desktop\\ProjetoAPI\\ProjetoUm.csproj",
+      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+      "outputPath": "D:\\Usuario(nao apagar)\\Desktop\\ProjetoAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\gimar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1527,7 +1527,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net9.0": {
@@ -1575,7 +1575,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
