@@ -62,6 +62,9 @@ namespace ProjetoUm.Services.Implementations
             await _context.SaveChangesAsync();
             return true;
         }
+        public async Task<IEnumerable<Personagem>> GetPersonagensOrdenados()
+        {
+            return await _context.DBZ.OrderBy(p => p.Nome).ToListAsync();
+        }
     }
-
 }
